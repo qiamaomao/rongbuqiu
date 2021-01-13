@@ -1,0 +1,11 @@
+.setfb {
+ border-radius: 4px;
+    background: #cbe4ef61 !important;
+    padding: 10px 12px;
+    box-shadow: 0 1px 5px #ddd;
+    -moz-box-shadow: 0 1px 5px #ddd;
+    -webkit-box-shadow: 0 1px 5px #ddd;
+    border-color: #ddd; 
+}
+.tagshelper a{cursor: pointer; padding: 0px 6px; margin: 2px 0;display: inline-block;border-radius: 2px;text-decoration: none;}
+.tagshelper a:hover{background: #ccc;color: #fff;}

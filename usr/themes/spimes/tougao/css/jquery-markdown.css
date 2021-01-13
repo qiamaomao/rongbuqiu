@@ -1,0 +1,251 @@
+body {
+  background: #F6F6F3;
+}
+
+.radio_box ul{
+   list-style: none;
+    height: 24px;
+    line-height: 24px;
+}
+.radio_box ul li{    float: left; background:url(../../images/radio_01.png) 5px center no-repeat;padding-left:34px;margin:0 5px;height:34px;line-height:34px;color:#575757;cursor:default}.radio_box ul li.selected{background:url(../../images/radio_02.png) 5px center no-repeat}.radio_box ul li:hover{color:var(--theme)}    
+
+.pos_z{
+    position: relative;
+}
+.pos_z i{
+    font-size: 18px;
+    position: absolute;
+    left: 10px;
+    top: 4px;
+    color: var(--theme);
+}
+
+.tougao__form{
+  margin: 20px 0;
+}
+.tougao__form .tips{
+  margin-top: 10px;
+  color: #9d9d9d;
+  font-size: 13px;
+  line-height: 13px;
+}
+
+.tougao_btn {
+    display: flex;
+}
+.tougao_btn .con_btn{
+    margin-right: 10px;
+}
+.tougao__form input {
+    width: calc(100% - 200px);
+    height: 40px;
+    background: #f3f5f6;
+    border-bottom: 0px solid rgba(0, 0, 0, .05);
+    border-top: 0px solid #ccc;
+    border-left: 0px solid #ccc;
+    border-right: 0px solid #ccc;
+    font-size: 14px;
+    color: #364e65;
+    padding: 10px 10px 10px 40px;
+}
+
+.insert{
+    position: relative;
+    display: block;
+}
+
+.p_color{ background-color: var(--theme)!important; }
+
+.Up_img img{
+    width: 120px;
+    border-radius: 6px;
+    height: 90px;
+    object-fit: cover;
+}
+.Up_img .info{
+    font-size: 13px;
+}
+.Up_img .info i{
+    font-weight: 600;
+    margin: 0 3px;
+}
+.Up_img li{
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+@media screen and (max-width: 767px){
+  .Up_img li{
+      width: 40%;
+    margin: 15px;
+  }  
+  .tougao__form input{
+      width: calc(100%);
+  }
+}
+
+#upload-panel {
+    border: 1px dashed #D9D9D6;
+    
+    color: #999;
+    font-size: .92857em;
+        margin-bottom: 20px;
+}
+.upload-area {
+    padding: 35px;
+    text-align: center;
+    margin-bottom: 20px;
+    border-bottom: 1px dashed #D9D9D6;
+}
+.upload-area .moxie-shim{  }
+.upload-file {
+    color: var(--theme);
+}
+#file-list {
+    list-style: none;
+    margin: 0 10px;
+    padding: 0;
+    max-height: 450px;
+    overflow: auto;
+    word-break: break-all;
+}
+
+.con_btn[disabled], html input[disabled] {
+    cursor: not-allowed;
+    background-color: #919394;
+}
+
+.con_btn{
+    
+    line-height: 30px;
+    font-size: 14px;
+    background-color: var(--theme);
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    
+    border: 0px solid #eee;
+    margin: 10px 0 20px;
+    color: white;
+}
+.con_btn:hover{ color: white; }
+.con_btn i {
+    position: relative;
+    z-index: 2;
+    color: white;
+}
+
+#md-header {
+  height: 32px;
+  overflow: hidden;
+  font-size: 13px;
+}
+
+#md-header button {
+  float: left;
+  height: 26px;
+  padding: 3px 8px;
+  border: none;
+  background: none;
+  background-color: rgba(255,255,255,0);
+}
+
+#md-editor, #md-build-div {
+    height: 550px;
+    font-size: 15px;
+    background: #f3f5f6;
+    border: 0px solid rgba(0, 0, 0, .05);
+    padding:10px;
+}
+
+#md-build-div {
+  display: none;
+  overflow: scroll;
+  line-height: 23px;
+}
+
+
+/*投稿页面*/
+
+.sp-dark-mode .tougao__form input{ background-color: #535b61;  color: #B1B1C1; }
+
+.sp-dark-mode #md-editor{ background-color: #535b61;  color: #B1B1C1;}
+
+.sp-dark-mode #md-header i{ color: var(--theme); }
+
+/****
+
+#md-build-div h1,#md-build-div h2,#md-build-div h3,#md-build-div h4,#md-build-div p,#md-build-div hr,#md-build-div ol,#md-build-div ul,#md-build-div img,#md-build-div pre,#md-build-div blockquote {
+  width: 90%;
+  margin-bottom: 30px;
+}
+
+#md-build-div hr {
+  width: 100%;
+  border: 0.5px solid #D9D9D6;
+}
+
+#md-build-div h1 {
+  font-size: 24px;
+}
+
+#md-build-div h2 {
+  font-size: 22px;
+}
+
+#md-build-div h3 {
+  font-size: 20px;
+}
+
+#md-build-div h4 {
+  font-size: 18px;
+}
+
+#md-build-div ol {
+  list-style-type: decimal;
+  padding-inline-start: 40px;
+}
+
+#md-build-div ol li{
+  list-style: decimal;
+}
+
+#md-build-div ul {
+  list-style-type: disc;
+  padding-inline-start: 40px;
+}
+
+#md-build-div ul li{
+  list-style: disc;
+}
+
+#md-build-div code {
+  background: rgb(235,235,235);
+  padding: 3px 3px;
+  border-radius: 5px;
+  margin: 5px;
+  color: #B94A48;
+}
+
+#md-build-div pre {
+  background: rgb(235,235,235);
+  padding: 15px;
+  margin-left: 5px;
+  border-radius: 5px;
+}
+
+#md-build-div pre code {
+  color: black;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: none;
+}
+
+#md-build-div blockquote {
+  margin-left: 5px;
+  padding-left: 16px;
+  border-left: 4px solid #E9E9E6;
+  color: #777;
+}
+
+***/
